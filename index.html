@@ -6,6 +6,7 @@
      href="C:\Projects\Cubby\images\cubby waving.png">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script defer src="index.js"></script>
   </head>
 
@@ -26,32 +27,32 @@
     </div>
 
     <!-- Emotion selection message -->
-    <div class="yourMessage hidden">
+    <div class="yourMessage hidden" id="emotion">
         <div class="rows">
             <container class="emotionPairs">
-                <img class="emotionImg" src="C:\Projects\Cubby\images\happy cubby.png" alt="Happy Cubby">
+                <img class="emotionImg" id="happy" src="C:\Projects\Cubby\images\happy cubby.png" alt="Happy Cubby">
                 <p>Happy</p>
             </container>
             <container class="emotionPairs">
-                <img class="emotionImg" src="C:\Projects\Cubby\images\calm cubby.png" alt="Calm Cubby">
+                <img class="emotionImg" id="calm" src="C:\Projects\Cubby\images\calm cubby.png" alt="Calm Cubby">
                 <p>Calm</p>
             </container>
             <container class="emotionPairs">
-                <img class="emotionImg" src="C:\Projects\Cubby\images\excited cubby.png" alt="Excited Cubby">
+                <img class="emotionImg" id="excited" src="C:\Projects\Cubby\images\excited cubby.png" alt="Excited Cubby">
                 <p>Excited</p>
             </container>
         </div>
         <div class="rows">
             <container class="emotionPairs">
-                <img class="emotionImg" src="C:\Projects\Cubby\images\sad cubby.png" alt="Sad Cubby">
+                <img class="emotionImg" id="sad" src="C:\Projects\Cubby\images\sad cubby.png" alt="Sad Cubby">
                 <p>Sad</p>
             </container>
             <container class="emotionPairs">
-                <img class="emotionImg" src="C:\Projects\Cubby\images\angry cubby.png" alt="Angry Cubby">
+                <img class="emotionImg" id="angry" src="C:\Projects\Cubby\images\angry cubby.png" alt="Angry Cubby">
                 <p>Angry</p>
             </container>
             <container class="emotionPairs">
-                <img class="emotionImg" src="C:\Projects\Cubby\images\worried cubby.png" alt="Worried Cubby">
+                <img class="emotionImg" id="worried" src="C:\Projects\Cubby\images\worried cubby.png" alt="Worried Cubby">
                 <p>Worried</p>
             </container>
         </div>
@@ -59,11 +60,11 @@
 
     <!-- Cubby related response -->
     <div class="right">
-        <p class="cubbyMessages hidden">
+        <p class="cubbyMessages hidden" id="response">
 
         </p>
         <p class="cubbyMessages hidden">
-            Sometimes Cubby feels that way too!
+            Sometimes Cubby feels like that too.
         </p>
         <p class="cubbyMessages hidden">
             Can you tell me why you feel that way?
@@ -81,6 +82,9 @@
     <!-- Cubby last messages -->
     <div class="right">
         <p class="cubbyMessages hidden">Thanks for sharing that with Cubby!</p>
+        <p class="cubbyMessages hidden" id="lastresponse">
+
+        </p>
         <p class="cubbyMessages hidden">
             Can Cubby show this to your parents?
             <container id="agree">

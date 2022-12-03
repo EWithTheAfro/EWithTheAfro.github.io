@@ -145,7 +145,7 @@ button:hover {
     opacity: 100%;
 }
 
-.emotionImg:focus {
+.clicked {
     opacity: 100%;
 }
 
