@@ -1,0 +1,94 @@
+<html> 
+  <head>
+    <title>Cubby</title>
+    <link rel="icon" 
+     type="image/png" 
+     href="C:\Projects\Cubby\images\cubby waving.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+  </head>
+
+  <body> 
+    <nav>
+        <a class="navlink" href="journal.html">My Journal</a>
+        <container id="navicon">
+            <p id="navtitle">Cubby</p>
+            <img id="navimage" src="C:\Projects\Cubby\images\cubby waving.png" alt="Cubby Waving">
+        </container>
+        <a class="navlink" href="index.html">Today's Log</a>
+    </nav>
+
+    <!-- Cubby introduction messages -->
+    <div class="right">
+        <p class="cubbyMessages hidden">Hi friend!</p>
+        <p class="cubbyMessages hidden">How do you feel today?</p>
+    </div>
+
+    <!-- Emotion selection message -->
+    <div class="yourMessage hidden">
+        <div class="rows">
+            <container class="emotionPairs">
+                <img class="emotionImg" src="C:\Projects\Cubby\images\happy cubby.png" alt="Happy Cubby">
+                <p>Happy</p>
+            </container>
+            <container class="emotionPairs">
+                <img class="emotionImg" src="C:\Projects\Cubby\images\calm cubby.png" alt="Calm Cubby">
+                <p>Calm</p>
+            </container>
+            <container class="emotionPairs">
+                <img class="emotionImg" src="C:\Projects\Cubby\images\excited cubby.png" alt="Excited Cubby">
+                <p>Excited</p>
+            </container>
+        </div>
+        <div class="rows">
+            <container class="emotionPairs">
+                <img class="emotionImg" src="C:\Projects\Cubby\images\sad cubby.png" alt="Sad Cubby">
+                <p>Sad</p>
+            </container>
+            <container class="emotionPairs">
+                <img class="emotionImg" src="C:\Projects\Cubby\images\angry cubby.png" alt="Angry Cubby">
+                <p>Angry</p>
+            </container>
+            <container class="emotionPairs">
+                <img class="emotionImg" src="C:\Projects\Cubby\images\worried cubby.png" alt="Worried Cubby">
+                <p>Worried</p>
+            </container>
+        </div>
+    </div>
+
+    <!-- Cubby related response -->
+    <div class="right">
+        <p class="cubbyMessages hidden">
+
+        </p>
+        <p class="cubbyMessages hidden">
+            Sometimes Cubby feels that way too!
+        </p>
+        <p class="cubbyMessages hidden">
+            Can you tell me why you feel that way?
+        </p>
+    </div>
+
+    <!-- Form to fill in about day -->
+    <div class="yourMessage hidden">
+        <form>
+            <textarea rows="auto" cols="40" style=" margin-bottom: 20px; padding: 15px; height: 100px; border-radius: 25px;" type="text"  id="log" name="log">I feel like this because...</textarea>
+            <input type="submit" id="submitBtn" value="Tell Cubby!">
+        </form>
+    </div>
+
+    <!-- Cubby last messages -->
+    <div class="right">
+        <p class="cubbyMessages hidden">Thanks for sharing that with Cubby!</p>
+        <p class="cubbyMessages hidden">
+            Can Cubby show this to your parents?
+            <container id="agree">
+                <button type="button" id="yes">Yes, please</button>
+                <button type="button" id="no">No, thank you</button>
+            </container>
+        </p>
+        <p class="cubbyMessages hidden">See you tomorrow, friend!</p>
+    </div>
+  </body>
+</html>
