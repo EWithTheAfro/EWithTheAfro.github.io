@@ -177,3 +177,19 @@ button:hover {
     flex-direction: row;
     justify-content: center;
 }
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    color:#A14E3C;
+}
+
+.container{
+    background-color:#EA526F;
+    color:#FCEADE;
+    padding: 20px;
+    margin:25px;
+    border-radius: 25px;
+  }

@@ -76,3 +76,19 @@ function highlight5() {
     emotion.classList.toggle("clicked");
     console.log(emotion);
 }
+
+var add=$(".submitBtn");
+var container=$(".containerJS");
+
+add.on("click", journal);
+
+function journal(event){
+  event.preventDefault();
+  var story=$("#id").val();
+  container.append(
+    `<section class="container" style="margin-bottom:25px;">
+        <p class="experience">${story}</p>
+    </section>
+    `
+  );
+};
